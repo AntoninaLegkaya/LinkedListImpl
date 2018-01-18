@@ -6,6 +6,16 @@
     android:orientation="vertical"
     tools:context="com.dbbest.linkedlistimpl.MainActivity">
 
+
+    <TextView
+        android:id="@+id/text_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:ems="10"
+        android:padding="@dimen/margin"
+        android:text="@string/result" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -34,21 +44,71 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/btn_add_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:text="@string/add_first" />
+
+        <Button
+            android:id="@+id/btn_add_last"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:text="@string/add_last" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/text_index"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:layout_marginStart="@dimen/margin"
+        android:ems="1"
+        android:inputType="number"
+        android:hint="@string/index" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
             android:id="@+id/btn_add_by_index"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/margin"
             android:text="@string/add_index" />
 
-        <EditText
-            android:id="@+id/text_index"
-            android:layout_width="match_parent"
+
+        <Button
+            android:id="@+id/btn_set_by_index"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/margin"
-            android:layout_marginStart="@dimen/margin"
-            android:ems="1"
-            android:inputType="number" />
+            android:text="@string/set_index" />
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_remove_by_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:text="@string/remove_by_index" />
+
+        <Button
+            android:id="@+id/btn_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:text="@string/remove" />
 
     </LinearLayout>
 
@@ -74,39 +134,5 @@
             android:text="@string/result_get" />
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/btn_add_first"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin"
-            android:text="@string/add_first" />
-
-        <Button
-            android:id="@+id/btn_add_last"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin"
-            android:text="@string/add_last" />
-        <Button
-            android:id="@+id/btn_remove"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin"
-            android:text="@string/remove_by_index" />
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/text_result"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin"
-        android:ems="10"
-        android:text="@string/result"
-        android:padding="@dimen/margin" />
 
 </LinearLayout>

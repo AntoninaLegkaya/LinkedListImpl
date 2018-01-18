@@ -3,9 +3,15 @@
     <string name="enter_value">Enter value</string>
     <string name="result">All list here</string>
     <string name="result_get">Result Get Here</string>
-    <string name="add_index">Add by index</string>
+
     <string name="get_by_index">Get by index</string>
     <string name="add_first">Add first</string>
     <string name="add_last">Add last</string>
-    <string name="remove_by_index">Remove </string>
+
+    <string name="index">Index</string>
+
+    <string name="add_index">Add by index</string>
+    <string name="set_index">Set by index</string>
+    <string name="remove_by_index">Remove Indx</string>
+    <string name="remove">Remove</string>
 </resources>
